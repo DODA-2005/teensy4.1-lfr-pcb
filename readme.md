@@ -110,6 +110,27 @@ visual comparison of routing, component placement, and mechanical alignment.
 ![TB6612FNG and DRV8833 – Back View](images/TB66%20and%20DRV%20Back.jpeg)
 
 ---
+# Hardware Design Files
+
+This folder contains the complete hardware design files for the
+Teensy 4.1 Line Follower Robot PCB.
+
+## Contents
+
+### Source Files
+- EasyEDA project files (.epro) for both PCB variants
+- These files can be opened and edited directly in EasyEDA
+
+### Gerber Files
+- Fabrication-ready Gerbers for both variants
+- Can be uploaded directly to PCB manufacturers
+
+## Variants
+- TB6612FNG motor driver variant
+- DRV8833 motor driver variant
+
+## Notes
+Verify connections, footprints, and component availability before fabrication.
 
 ## Fabrication
 
