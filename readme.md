@@ -34,6 +34,37 @@ The board has been fabricated, assembled, and tested on a working robot.
 - Competition-tested hardware design
 
 ---
+## Motor Driver Variants
+
+Two PCB variants were designed and fabricated to evaluate different motor driver
+configurations for competitive line-following robots.
+
+Both variants share the same core architecture, sensor layout, and mechanical form factor.
+
+---
+
+### Variant A: TB6612FNG
+
+- Motor Driver: TB6612FNG
+- Known for robustness and stable performance
+- Suitable for higher current margin applications
+- Used in early competition testing
+
+#### Assembled PCB
+![TB6612FNG PCB – With Motors](images/tb6612fng/with_motors.jpg)
+
+---
+
+### Variant B: DRV8833
+
+- Motor Driver: DRV8833
+- Compact and efficient dual H-bridge driver
+- Lower Rds(on), improved thermal behavior
+- Evaluated as an alternative motor driver solution
+
+#### Assembled PCB
+![DRV8833 PCB – With Motors](images/drv8833/with_motors.jpg)
+
 
 ## PCB Specifications
 
