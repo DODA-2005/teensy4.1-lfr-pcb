@@ -170,7 +170,17 @@ You are free to:
 See the `LICENSE` file for full terms.
 
 ---
+## Acknowledgements
 
+The initial PCB outline and general form factor of this board were inspired by
+an open-source line follower PCB design published on OSHWLab:
+
+https://oshwlab.com/taifur/line-follower-3
+
+All circuitry, routing, component selection, pin mapping, power design,
+and motor driver integration in this project were independently redesigned
+from scratch for a Teensy 4.1–based architecture and competitive use.
+---
 ## Disclaimer
 
 This hardware design is provided for educational and experimental purposes.
