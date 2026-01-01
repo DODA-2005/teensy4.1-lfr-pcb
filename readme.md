@@ -1,25 +1,25 @@
 # Teensy 4.1 Line Follower Robot – Competition PCB
 
 A custom-designed, fabricated, and tested PCB for a high-speed Line Follower Robot (LFR),
-built around the Teensy 4.1 microcontroller and optimized for competitive robotics use.
+built around the Teensy 4.1 microcontroller and intended for competitive robotics use.
 
-This repository contains **only the hardware design files** (PCB, schematic, and fabrication outputs).
+This repository contains **only the hardware design and fabrication assets**.
 Firmware is intentionally not included.
 
 ---
 
 ## Overview
 
-This PCB was designed from scratch for use in competitive line-following robots where
-speed, stability, and reliable sensor acquisition are critical.
+This project documents the design and fabrication of a competition-grade PCB
+for a line follower robot, with emphasis on:
 
-The design focuses on:
-- clean analog signal routing
-- mechanical–electrical integration
-- ease of tuning during competitions
-- real-world performance on tracks
+- reliable high-speed operation
+- clean analog signal acquisition
+- mechanical–electrical co-design
+- on-board control and tuning during competitions
 
-The board has been fabricated, assembled, and tested on a working robot.
+The PCB has been manufactured, assembled, and tested on a working robot.
+Multiple hardware iterations were explored to evaluate different motor driver options.
 
 ---
 
@@ -27,31 +27,34 @@ The board has been fabricated, assembled, and tested on a working robot.
 
 - Teensy 4.1 based high-performance control board
 - Curved front-mounted IR sensor array for wide and consistent line coverage
-- Optimized analog routing for stable ADC readings at high speed
+- Optimized analog routing for stable ADC readings
 - On-board tactile buttons for mode selection and tuning
-- Symmetric layout for predictable motion behavior
-- PCB designed to act as a structural element of the robot
-- Competition-tested hardware design
+- Symmetric geometry for predictable motion behavior
+- PCB designed to act as both control board and structural element
+- Hardware tested in real-world line-following scenarios
 
 ---
+
 ## Motor Driver Variants
 
 Two PCB variants were designed and fabricated to evaluate different motor driver
-configurations for competitive line-following robots.
+integrations while keeping the same overall geometry, sensor placement, and
+mechanical constraints.
 
-Both variants share the same core architecture, sensor layout, and mechanical form factor.
+Both variants share:
+- identical board outline and dimensions
+- identical IR sensor array geometry
+- identical Teensy 4.1 placement
+- similar power and signal routing philosophy
 
 ---
 
 ### Variant A: TB6612FNG
 
 - Motor Driver: TB6612FNG
-- Known for robustness and stable performance
+- Proven and robust dual H-bridge driver
 - Suitable for higher current margin applications
 - Used in early competition testing
-
-#### Assembled PCB
-![TB6612FNG PCB – With Motors](images/tb6612fng/with_motors.jpg)
 
 ---
 
@@ -59,39 +62,64 @@ Both variants share the same core architecture, sensor layout, and mechanical fo
 
 - Motor Driver: DRV8833
 - Compact and efficient dual H-bridge driver
-- Lower Rds(on), improved thermal behavior
+- Lower Rds(on) and improved thermal characteristics
 - Evaluated as an alternative motor driver solution
-
-#### Assembled PCB
-![DRV8833 PCB – With Motors](images/drv8833/with_motors.jpg)
-
-
-## PCB Specifications
-
-- Layers: 2
-- Material: FR4
-- Controller: Teensy 4.1
-- Sensor Interface: Analog IR sensor array
-- Motor Interface: Dual DC motors
-- Power Input: Li-ion / LiPo compatible
-- Design Tool: EasyEDA
 
 ---
 
-## Repository Contents
+## PCB Layouts
 
+### TB6612FNG Variant – PCB Layout
+
+![TB6612FNG PCB Layout](images/PCBLayout_TB66.png)
+
+---
+
+### DRV8833 Variant – PCB Layout
+
+![DRV8833 PCB Layout](images/PCBLayout_DRV88.png)
+
+---
+
+## Assembled Hardware
+
+### DRV8833 Variant – Assembled
+
+#### DRV8833 PCB with SMD Components
+![DRV8833 PCB with SMD](images/DRV_with_SMD.jpg)
+
+#### DRV8833 PCB with Motors Mounted
+![DRV8833 PCB with Motors](images/DRV_with_motors.jpg)
+
+---
+
+## Side-by-Side Comparison (TB6612FNG vs DRV8833)
+
+The following images show **both PCB variants in the same frame** for direct
+visual comparison of routing, component placement, and mechanical alignment.
+
+> **Note:**  
+> Both the TB6612FNG and DRV8833 variants are visible in the same image.
+> Differences are primarily limited to the motor driver section; the overall
+> board geometry and sensor layout remain consistent.
+
+### Front View (Both Variants)
+![TB6612FNG and DRV8833 – Front View](images/TB66%20and%20DRV%20front.jpeg)
+
+### Back View (Both Variants)
+![TB6612FNG and DRV8833 – Back View](images/TB66%20and%20DRV%20Back.jpeg)
 
 ---
 
 ## Fabrication
 
-This PCB can be fabricated by directly uploading the Gerber files to any PCB manufacturer
-(e.g., JLCPCB, PCBWay).
+The PCB can be fabricated by directly uploading the provided Gerber files
+to any standard PCB manufacturer (e.g., JLCPCB, PCBWay).
 
-Recommended fabrication settings:
+Recommended fabrication parameters:
 - 2-layer board
-- 1.6 mm thickness
 - FR4 material
+- 1.6 mm thickness
 - Green solder mask
 
 ---
@@ -101,7 +129,7 @@ Recommended fabrication settings:
 ✔ PCB designed  
 ✔ PCB fabricated  
 ✔ Assembled and tested on robot  
-✔ Used in competitive line-following environments  
+✔ Multiple hardware variants evaluated  
 ✖ Firmware intentionally excluded  
 
 ---
