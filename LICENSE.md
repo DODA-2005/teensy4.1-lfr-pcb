@@ -10,4 +10,4 @@ to the original author.
 This design is provided "as is", without warranty of any kind.
 
 Full license text:
-https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2
+https://gitlab.com/ohwr/project/cernohl/-/wikis/uploads/82b567f43ce515395f7ddbfbad7a8806/cern_ohl_w_v2.txt
