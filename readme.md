@@ -169,6 +169,9 @@ You are free to:
 
 See the `LICENSE` file for full terms.
 
+This project contains original work and derivative elements in accordance
+with the terms of the referenced open-source designs.
+
 ---
 ## Acknowledgements
 
