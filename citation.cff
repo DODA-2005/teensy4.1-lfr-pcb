@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Teensy 4.1 Line Follower Robot PCB"
+authors:
+  - family-names: Anil
+    given-names: Pranav
+version: 1.0.0
+date-released: 2026-01-01
+url: https://github.com/DODA-2005/teensy4.1-lfr-pcb
+license: CERN-OHL-2.0
