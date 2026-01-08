@@ -83,9 +83,10 @@ Both variants share:
 
 ## Assembled Hardware
 
-### DRV8833 Variant – Assembled
+### DRV8833 Variant – Assembled 
+(The background of the images have been enhanced by AI for better look)
 
-#### DRV8833 PCB with SMD Components
+#### DRV8833 PCB with SMD Components 
 ![DRV8833 PCB with SMD](images/DRV_with_SMD.jpg)
 
 #### DRV8833 PCB with Motors Mounted
